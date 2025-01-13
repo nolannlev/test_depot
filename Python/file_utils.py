@@ -4,8 +4,7 @@ def diff(file_first, file_second):
     """Fonction retournant True si deux fichiers sont différents."""
     resultat = False
     with open(file_first, encoding='utf-8') as file1_id, open(file_second ,encoding='utf-8') as file2_id:
-		resultat = file1_id.read() != file2_id.read()
-    return resultat
+		return file1_id.read() != file2_id.read()
 
 def same(file_first, file_second):
     """Fonction retournant True si deux fichiers sont identiques."""
